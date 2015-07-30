@@ -1,0 +1,691 @@
+
+**** Clean-only build of configuration Debug for project contest ****
+
+make clean 
+
+Cannot run program "make": Launching failed
+Error: Program "make" is not found in PATH
+
+PATH=[C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\TortoiseHg\]
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project eclipse Windous ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Pachinko.o ..\Pachinko.cpp
+..\Pachinko.cpp: In function 'int main()':
+..\Pachinko.cpp:93:23: warning: unknown conversion type character 'L' in format [-Wformat]
+..\Pachinko.cpp:93:23: warning: too many arguments for format [-Wformat-extra-args]
+g++ -o eclipse Windous.exe Pachinko.o
+Build complete for project eclipse Windous
+Time consumed: 2631  ms.  
+
+**** Build of configuration Debug for project eclipse Windous ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for eclipse Windous
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../System Administrator.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"System Administrator.d" -MT"System\ Administrator.d" -o "System Administrator.o" "../System Administrator.cpp"
+Finished building: ../System Administrator.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./System\ Administrator.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../System Administrator.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"System Administrator.d" -MT"System\ Administrator.d" -o "System Administrator.o" "../System Administrator.cpp"
+Finished building: ../System Administrator.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./System\ Administrator.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../System Administrator.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"System Administrator.d" -MT"System\ Administrator.d" -o "System Administrator.o" "../System Administrator.cpp"
+Finished building: ../System Administrator.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./System\ Administrator.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../System Administrator.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"System Administrator.d" -MT"System\ Administrator.d" -o "System Administrator.o" "../System Administrator.cpp"
+Finished building: ../System Administrator.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./System\ Administrator.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../System Administrator.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"System Administrator.d" -MT"System\ Administrator.d" -o "System Administrator.o" "../System Administrator.cpp"
+Finished building: ../System Administrator.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./System\ Administrator.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../twin.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"twin.d" -MT"twin.d" -o "twin.o" "../twin.cpp"
+Finished building: ../twin.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./twin.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project c++ ****
+
+make all 
+Building file: ../c++.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"c++.d" -MT"c++.d" -o "c++.o" "../c++.cpp"
+Finished building: ../c++.cpp
+ 
+Building target: c++
+Invoking: GCC C++ Linker
+g++  -o "c++"  ./c++.o   
+Finished building target: c++
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project c++ ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../twin.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"twin.d" -MT"twin.d" -o "twin.o" "../twin.cpp"
+Finished building: ../twin.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./twin.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../twin.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"twin.d" -MT"twin.d" -o "twin.o" "../twin.cpp"
+Finished building: ../twin.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./twin.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../twin.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"twin.d" -MT"twin.d" -o "twin.o" "../twin.cpp"
+Finished building: ../twin.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./twin.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../pichinko.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"pichinko.d" -MT"pichinko.d" -o "pichinko.o" "../pichinko.cpp"
+../pichinko.cpp: In function ‘int main()’:
+../pichinko.cpp:93:23: warning: format ‘%Lf’ expects argument of type ‘long double’, but argument 2 has type ‘double’ [-Wformat]
+Finished building: ../pichinko.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./pichinko.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../pichinko.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"pichinko.d" -MT"pichinko.d" -o "pichinko.o" "../pichinko.cpp"
+../pichinko.cpp: In function ‘int main()’:
+../pichinko.cpp:93:23: warning: format ‘%Lf’ expects argument of type ‘long double’, but argument 2 has type ‘double’ [-Wformat]
+Finished building: ../pichinko.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./pichinko.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../pichinko.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"pichinko.d" -MT"pichinko.d" -o "pichinko.o" "../pichinko.cpp"
+Finished building: ../pichinko.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./pichinko.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../pichinko.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"pichinko.d" -MT"pichinko.d" -o "pichinko.o" "../pichinko.cpp"
+../pichinko.cpp: In function ‘int main()’:
+../pichinko.cpp:89:23: warning: format ‘%Lf’ expects argument of type ‘long double’, but argument 2 has type ‘double’ [-Wformat]
+Finished building: ../pichinko.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./pichinko.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../pichinko.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"pichinko.d" -MT"pichinko.d" -o "pichinko.o" "../pichinko.cpp"
+../pichinko.cpp: In function ‘int main()’:
+../pichinko.cpp:92:23: warning: format ‘%Lf’ expects argument of type ‘long double’, but argument 2 has type ‘double’ [-Wformat]
+Finished building: ../pichinko.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./pichinko.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../pichinko.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"pichinko.d" -MT"pichinko.d" -o "pichinko.o" "../pichinko.cpp"
+../pichinko.cpp: In function ‘int main()’:
+../pichinko.cpp:88:23: warning: format ‘%Lf’ expects argument of type ‘long double’, but argument 2 has type ‘double’ [-Wformat]
+Finished building: ../pichinko.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./pichinko.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../pichinko.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"pichinko.d" -MT"pichinko.d" -o "pichinko.o" "../pichinko.cpp"
+../pichinko.cpp: In function ‘int main()’:
+../pichinko.cpp:93:23: warning: format ‘%Lf’ expects argument of type ‘long double’, but argument 2 has type ‘double’ [-Wformat]
+Finished building: ../pichinko.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./pichinko.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../pichinko.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"pichinko.d" -MT"pichinko.d" -o "pichinko.o" "../pichinko.cpp"
+../pichinko.cpp: In function ‘int main()’:
+../pichinko.cpp:94:23: warning: format ‘%Lf’ expects argument of type ‘long double’, but argument 2 has type ‘double’ [-Wformat]
+Finished building: ../pichinko.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./pichinko.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../pichinko.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"pichinko.d" -MT"pichinko.d" -o "pichinko.o" "../pichinko.cpp"
+Finished building: ../pichinko.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./pichinko.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../pichinko.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"pichinko.d" -MT"pichinko.d" -o "pichinko.o" "../pichinko.cpp"
+Finished building: ../pichinko.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./pichinko.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../Cut Ribbon.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cut Ribbon.d" -MT"Cut\ Ribbon.d" -o "Cut Ribbon.o" "../Cut Ribbon.cpp"
+Finished building: ../Cut Ribbon.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./Cut\ Ribbon.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../Cut Ribbon.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cut Ribbon.d" -MT"Cut\ Ribbon.d" -o "Cut Ribbon.o" "../Cut Ribbon.cpp"
+Finished building: ../Cut Ribbon.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./Cut\ Ribbon.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../MAXIMUM WOOD CUTTER.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MAXIMUM WOOD CUTTER.d" -MT"MAXIMUM\ WOOD\ CUTTER.d" -o "MAXIMUM WOOD CUTTER.o" "../MAXIMUM WOOD CUTTER.cpp"
+Finished building: ../MAXIMUM WOOD CUTTER.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./MAXIMUM\ WOOD\ CUTTER.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../MAXIMUM WOOD CUTTER.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MAXIMUM WOOD CUTTER.d" -MT"MAXIMUM\ WOOD\ CUTTER.d" -o "MAXIMUM WOOD CUTTER.o" "../MAXIMUM WOOD CUTTER.cpp"
+Finished building: ../MAXIMUM WOOD CUTTER.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./MAXIMUM\ WOOD\ CUTTER.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../MAXIMUM WOOD CUTTER.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MAXIMUM WOOD CUTTER.d" -MT"MAXIMUM\ WOOD\ CUTTER.d" -o "MAXIMUM WOOD CUTTER.o" "../MAXIMUM WOOD CUTTER.cpp"
+Finished building: ../MAXIMUM WOOD CUTTER.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./MAXIMUM\ WOOD\ CUTTER.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../MAXIMUM WOOD CUTTER.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MAXIMUM WOOD CUTTER.d" -MT"MAXIMUM\ WOOD\ CUTTER.d" -o "MAXIMUM WOOD CUTTER.o" "../MAXIMUM WOOD CUTTER.cpp"
+Finished building: ../MAXIMUM WOOD CUTTER.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./MAXIMUM\ WOOD\ CUTTER.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../MAXIMUM WOOD CUTTER.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MAXIMUM WOOD CUTTER.d" -MT"MAXIMUM\ WOOD\ CUTTER.d" -o "MAXIMUM WOOD CUTTER.o" "../MAXIMUM WOOD CUTTER.cpp"
+Finished building: ../MAXIMUM WOOD CUTTER.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./MAXIMUM\ WOOD\ CUTTER.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../MAXIMUM WOOD CUTTER.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MAXIMUM WOOD CUTTER.d" -MT"MAXIMUM\ WOOD\ CUTTER.d" -o "MAXIMUM WOOD CUTTER.o" "../MAXIMUM WOOD CUTTER.cpp"
+Finished building: ../MAXIMUM WOOD CUTTER.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./MAXIMUM\ WOOD\ CUTTER.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../MAXIMUM WOOD CUTTER.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MAXIMUM WOOD CUTTER.d" -MT"MAXIMUM\ WOOD\ CUTTER.d" -o "MAXIMUM WOOD CUTTER.o" "../MAXIMUM WOOD CUTTER.cpp"
+Finished building: ../MAXIMUM WOOD CUTTER.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./MAXIMUM\ WOOD\ CUTTER.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../MAXIMUM WOOD CUTTER.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MAXIMUM WOOD CUTTER.d" -MT"MAXIMUM\ WOOD\ CUTTER.d" -o "MAXIMUM WOOD CUTTER.o" "../MAXIMUM WOOD CUTTER.cpp"
+../MAXIMUM WOOD CUTTER.cpp: In function ‘int DPP(int, int, int)’:
+../MAXIMUM WOOD CUTTER.cpp:64:5: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wparentheses]
+Finished building: ../MAXIMUM WOOD CUTTER.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./MAXIMUM\ WOOD\ CUTTER.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../MAXIMUM WOOD CUTTER.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MAXIMUM WOOD CUTTER.d" -MT"MAXIMUM\ WOOD\ CUTTER.d" -o "MAXIMUM WOOD CUTTER.o" "../MAXIMUM WOOD CUTTER.cpp"
+../MAXIMUM WOOD CUTTER.cpp: In function ‘int DPP(int, int, int)’:
+../MAXIMUM WOOD CUTTER.cpp:64:5: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wparentheses]
+Finished building: ../MAXIMUM WOOD CUTTER.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./MAXIMUM\ WOOD\ CUTTER.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../MAXIMUM WOOD CUTTER.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MAXIMUM WOOD CUTTER.d" -MT"MAXIMUM\ WOOD\ CUTTER.d" -o "MAXIMUM WOOD CUTTER.o" "../MAXIMUM WOOD CUTTER.cpp"
+../MAXIMUM WOOD CUTTER.cpp: In function ‘int DPP(int, int, int)’:
+../MAXIMUM WOOD CUTTER.cpp:64:5: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wparentheses]
+Finished building: ../MAXIMUM WOOD CUTTER.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./MAXIMUM\ WOOD\ CUTTER.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../MAXIMUM WOOD CUTTER.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MAXIMUM WOOD CUTTER.d" -MT"MAXIMUM\ WOOD\ CUTTER.d" -o "MAXIMUM WOOD CUTTER.o" "../MAXIMUM WOOD CUTTER.cpp"
+../MAXIMUM WOOD CUTTER.cpp: In function ‘int DPP(int, int, int)’:
+../MAXIMUM WOOD CUTTER.cpp:64:5: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wparentheses]
+Finished building: ../MAXIMUM WOOD CUTTER.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./MAXIMUM\ WOOD\ CUTTER.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../MAXIMUM WOOD CUTTER.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MAXIMUM WOOD CUTTER.d" -MT"MAXIMUM\ WOOD\ CUTTER.d" -o "MAXIMUM WOOD CUTTER.o" "../MAXIMUM WOOD CUTTER.cpp"
+../MAXIMUM WOOD CUTTER.cpp: In function ‘int DPP(int, int, int)’:
+../MAXIMUM WOOD CUTTER.cpp:65:5: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wparentheses]
+Finished building: ../MAXIMUM WOOD CUTTER.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./MAXIMUM\ WOOD\ CUTTER.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../MAXIMUM WOOD CUTTER.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MAXIMUM WOOD CUTTER.d" -MT"MAXIMUM\ WOOD\ CUTTER.d" -o "MAXIMUM WOOD CUTTER.o" "../MAXIMUM WOOD CUTTER.cpp"
+../MAXIMUM WOOD CUTTER.cpp: In function ‘int DPP(int, int, int)’:
+../MAXIMUM WOOD CUTTER.cpp:65:5: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wparentheses]
+Finished building: ../MAXIMUM WOOD CUTTER.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./MAXIMUM\ WOOD\ CUTTER.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../MAXIMUM WOOD CUTTER.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MAXIMUM WOOD CUTTER.d" -MT"MAXIMUM\ WOOD\ CUTTER.d" -o "MAXIMUM WOOD CUTTER.o" "../MAXIMUM WOOD CUTTER.cpp"
+../MAXIMUM WOOD CUTTER.cpp: In function ‘int DPP(int, int, int)’:
+../MAXIMUM WOOD CUTTER.cpp:65:5: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wparentheses]
+Finished building: ../MAXIMUM WOOD CUTTER.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./MAXIMUM\ WOOD\ CUTTER.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+Building file: ../MAXIMUM WOOD CUTTER.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"MAXIMUM WOOD CUTTER.d" -MT"MAXIMUM\ WOOD\ CUTTER.d" -o "MAXIMUM WOOD CUTTER.o" "../MAXIMUM WOOD CUTTER.cpp"
+../MAXIMUM WOOD CUTTER.cpp: In function ‘int DPP(int, int, int)’:
+../MAXIMUM WOOD CUTTER.cpp:65:5: warning: suggest explicit braces to avoid ambiguous ‘else’ [-Wparentheses]
+Finished building: ../MAXIMUM WOOD CUTTER.cpp
+ 
+Building target: contest
+Invoking: GCC C++ Linker
+g++  -o "contest"  ./MAXIMUM\ WOOD\ CUTTER.o   
+Finished building target: contest
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project contest ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****

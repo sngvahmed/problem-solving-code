@@ -1,0 +1,51 @@
+//============================================================================
+// Name        : contest2.cpp
+// Author      :
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<vector>
+#include<queue>
+using namespace std;
+
+vector<int> son[2001];
+int par[1001];
+
+bool checkij(int sou, int tar) {
+	queue<int> node;
+	node.push(tar);
+	while (node.size() != 0) {
+		tar = node.front();
+		if (tar == sou)
+			return true;
+		for (int j = 0; j < son[tar].size(); j++)
+			node.push(son[tar][j]);
+	}
+	return false;
+}
+
+int main() {
+	int t, n, m, sou, tar, nouse, Fres;
+	vector<vector<int> > save;
+	vector<int> temp;
+	cin >> t;
+	while (t--) {
+		cin >> n >> m;
+		Fres = n;
+		for (int i = 0; i < m; i++) {
+			cin >> sou >> tar;
+			par[tar] = sou, son[sou].push_back(tar);
+		}
+		cin >> nouse;
+		for (int i = 1; i <= n; i++) {
+			for (int j = 0; j < son[i].size(); j++) {
+				if (checkij(i, son[i][j])) {
+				}
+			}
+		}
+	}
+	return 0;
+}

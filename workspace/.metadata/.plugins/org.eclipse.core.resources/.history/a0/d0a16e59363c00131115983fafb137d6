@@ -1,0 +1,87 @@
+//============================================================================
+// Name        : contest2.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<vector>
+#include<queue>
+#include<algorithm>
+using namespace std;
+
+class card {
+
+public:
+	int address, fourten;
+	char symbol;
+
+};
+int tc = 0, n = 0;
+string str;
+card arr[10];
+bool cmp(card x, card y) {
+	return x.fourten < y.fourten;
+}
+
+void putRelated(vector<card>&v, char sym, int cur) {
+
+	for (int i = 0; i < n; i++) {
+		if (cur == arr[i].address && sym == arr[i].symbol)
+			v.push_back(arr[i]);
+	}
+}
+
+int search(vector<card>&v, char nextS) { // reaturn index
+
+	for (int i = 0; i < (int) v.size(); i++) {
+
+		for (int j = 0; j < n; j++) {
+			if (arr[j].address == v[i].fourten && nextS == arr[j].symbol)
+				return i;
+
+		}
+
+	}
+	return -1;
+}
+int cur = 1;
+
+int main() {
+
+	cin >> tc;
+
+	int ret = 0;
+	while (tc--) {
+		cur = 1;
+		cin >> n;
+
+		for (int i = 0; i < n; i++)
+			cin >> arr[i].address >> arr[i].symbol >> arr[i].fourten;
+
+		cin >> str;
+
+		vector<card> v;
+		for (int i = 0; i < (int) str.size(); i++) {
+			putRelated(v, str[i], cur);
+			sort(v.rbegin(), v.rend(), cmp);
+
+			int index = 0;
+			if (i < (int)str.size() - 1) {
+				 index = search(v, str[i + 1]);
+			}
+
+				cur = v[index].fourten;
+				ret += v[index].fourten;
+
+			v.clear();
+		}
+
+		cout << ret << endl;
+		ret = 0;
+	}
+
+	return 0;
+}

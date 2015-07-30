@@ -1,0 +1,67 @@
+package linear_quantizer;
+
+import java.util.*;
+import java.io.*;
+
+public class linear_quantizer {
+	static int n_bits = 0;
+	static ArrayList<Integer> num = new ArrayList<Integer>();
+	static ArrayList<String> word = new ArrayList<String>();
+	static ArrayList<range> rang = new ArrayList<range>();
+
+	public static void BuildString(String nm, int count, int des) {
+		if (word.size() <= des * 2 && nm.length() == des) {
+			word.add(nm);
+		}
+		if (count >= des * 2)
+			return;
+		BuildString(nm + "1", count = count + 1, des);
+		BuildString(nm + "0", count = count + 1, des);
+	}
+
+	public static void readInput() {
+		Scanner input = null;
+		try {
+			input = new Scanner(new File("q.txt"));
+		} catch (Exception e) {
+			System.out.println("Error Opening the File");
+			return;
+		}
+		n_bits = input.nextInt();
+		while (input.hasNext()) {
+			int x = input.nextInt();
+			// System.out.println(x);
+			num.add(x);
+		}
+		return;
+	}
+
+	static void Show(ArrayList<range> num) {
+		for (int i = 0; i < num.size(); i++)
+			System.out.print(num.get(i) + " :: ");
+		System.out.println();
+	}
+
+	static public void main(String[] args) {
+		readInput();
+		int pwr = (int) Math.pow(2, n_bits);
+		Collections.sort(num);
+		int step = num.get(num.size() - 1) - num.get(0);
+		step = step / pwr;
+		BuildString("", 0, n_bits / 2);
+		range rng = new range();
+		rng.up = 0;
+		while (rng.up < num.get(num.size() - 1)) {
+			if (rng.up == 0) {
+				rng.down = 0;
+				rng.up = step;
+				rang.add(rng);
+			} else {
+				rng.down = rng.up + 1;
+				rng.up = rng.down + step;
+				rang.add(rng);
+			}
+		}
+		Show(rang);
+	}
+}

@@ -1,0 +1,352 @@
+package other;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+public class test {
+	public static final String args = null;
+
+	public static class LinuxCommands {
+
+		private static final String logger = null;
+
+		// Clear Commands
+		/*
+		 * public void clear () { ArrayList<String> arlist=new
+		 * ArrayList<String>();
+		 * 
+		 * 
+		 * arlist.clear(); // clear all elements from arraylist
+		 * 
+		 * System.out.println("ArrayList Size :"+arlist.size()); }
+		 */
+		public void clear() {
+			for (int i = 0; i < 100; i++) {
+
+				System.out.println("");
+			}
+		}
+
+		// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// help command
+		public void help() {
+			System.out.println("clear: clear the screen");
+			System.out
+					.println("cd:changes the current directory to another one");
+			System.out
+					.println("ls:display all information about the listed files");
+			System.out.println("date: output current system date and time");
+			System.out
+					.println("mkdir:creates a directory with each given name");
+			System.out.println("rmdir:removes each given empty directory");
+			System.out.println("cat:display files");
+			System.out
+					.println("more:display and scroll down the output in one direction only");
+			System.out.println("less:support scroll forward and backward.");
+			System.out.println("pwd:get path");
+			System.out
+					.println("mv:moves each other given file into a file with the same name in that directory");
+			System.out.println("rm:removes each specified file");
+		}
+
+		// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// Delete file
+		public void deletFile() {
+			try {
+
+				File file = new File("C:\\Directory1");
+
+				if (file.delete()) {
+					System.out.println(file.getName() + " is deleted!");
+				} else {
+					System.out.println("Delete operation is failed.");
+				}
+
+			} catch (Exception e) {
+
+				e.printStackTrace();
+			}
+		}
+
+		// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// mkdir command
+		public void makeDirection() {
+
+			File file = new File("C:\\Directory1");
+			if (!file.exists()) {
+				if (file.mkdir()) {
+					System.out.println("Directory is created!");
+				} else {
+					System.out.println("Failed to create directory!");
+				}
+			}
+
+			File files = new File("C:\\Directory2\\Sub2\\Sub-Sub2");
+			if (files.exists()) {
+				if (files.mkdirs()) {
+					System.out.println("Multiple directories are created!");
+				} else {
+					System.out
+							.println("Failed to create multiple directories!");
+				}
+			}
+		}
+
+		// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// date command
+		public void date() {
+			DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+			// get current date time with Date()
+			Date date = new Date();
+			System.out.println(dateFormat.format(date));
+
+			// get current date time with Calendar()
+			Calendar cal = Calendar.getInstance();
+			System.out.println(dateFormat.format(cal.getTime()));
+
+		}
+
+		// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// rm command
+		void delete(File f) throws IOException {
+			if (f.isDirectory()) {
+				for (File c : f.listFiles())
+					delete(c);
+			}
+			if (!f.delete())
+				throw new FileNotFoundException("Failed to delete file: " + f);
+		}
+
+		// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// mv command
+
+		public void mv() {
+
+			String[] shCommand = { "/bin/sh", "-c", "mv somefile newfile" };
+
+			// creates a process to run the command in
+			Runtime rt = Runtime.getRuntime();
+			Process prcs = null;
+			try {
+				// run the command
+				prcs = rt.exec(shCommand);
+			} catch (Exception e) {
+				System.out.println("Execute Command Error:");
+				e.printStackTrace();
+			}
+
+		}
+
+		// //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// ls command
+		public void ls() {
+			String[] shCommand = { "/bin/sh", "-c", "mv somefile newfile" };
+
+			// creates a process to run the command in
+			Runtime rt = Runtime.getRuntime();
+			Process prcs = null;
+			try {
+				// run the command
+				prcs = rt.exec(shCommand);
+			} catch (Exception e) {
+				System.out.println("Execute Command Error:");
+				e.printStackTrace();
+			}
+
+		}
+
+		// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// cp command
+
+		// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// cd command
+		public void cd() {
+			File wd = new File("/bin");
+			System.out.println(wd);
+			Process proc = null;
+			try {
+				proc = Runtime.getRuntime().exec("/bin/bash", null, wd);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			if (proc != null) {
+				BufferedReader in = new BufferedReader(new InputStreamReader(
+						proc.getInputStream()));
+				PrintWriter out = new PrintWriter(new BufferedWriter(
+						new OutputStreamWriter(proc.getOutputStream())), true);
+				out.println("cd ..");
+				out.println("pwd");
+				out.println("exit");
+				try {
+					String line;
+					while ((line = in.readLine()) != null) {
+						System.out.println(line);
+					}
+					proc.waitFor();
+					in.close();
+					out.close();
+					proc.destroy();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}
+
+		// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// more command
+		// public static void more() throws IOException, InterruptedException {
+		public static BufferedReader br;
+
+		public static void more() throws IOException {
+			File file = new File("C://input.txt");
+
+			try {
+				br = new BufferedReader(new FileReader(file));
+			} catch (Exception e) {
+
+				String line = null;
+				while ((line = br.readLine()) != null) {
+					System.out.println(line);
+				}
+
+			}
+
+		}
+
+		// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// less command
+
+		public static void less() {
+			File Folder = new File("C:\\haa\\ha.text");
+			File file = new File("C:\\haa\\ma.txt");
+
+			try {
+				br = new BufferedReader(new FileReader(file));
+				while ((line = br.readLine()) != null) {
+					System.out.println(line);
+				}
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+
+		}
+
+		// /////////////////////////////////////////////////////////////////////////////////////////////
+		// function cat
+
+		public static void cat(String infile) {
+			try {
+				BufferedReader reader = new BufferedReader(new FileReader(
+						infile));
+				String line = reader.readLine(); // Read the first line of the
+													// file.
+				while (line != null) { // Line becomes null at end of file
+					System.out.println(line);
+					line = reader.readLine(); // Read the next line of the file
+				}
+				reader.close();
+			} catch (IOException ex) {
+				System.out.println(ex);
+			}
+		}
+		// //////////////////////////////////////////////////////////////////
+	}
+
+	@SuppressWarnings("null")
+	public static void main(String[] args) {
+
+		LinuxCommands o = new LinuxCommands();
+		o.cd();
+		// o.cp();
+		o.ls();
+		o.mv();
+		o.date();
+		o.makeDirection();
+		o.clear();
+		o.help();
+		o.deletFile();
+
+		o.more();
+		o.less();
+		o.cat("f1");
+	}
+
+	public void cd() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void help() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void deletFile() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void clear() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void makeDirection() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void date() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void mv() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void cp() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void help1() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void ls() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void more() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void less() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void cat() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

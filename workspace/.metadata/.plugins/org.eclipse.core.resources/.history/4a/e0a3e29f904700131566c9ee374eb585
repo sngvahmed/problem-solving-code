@@ -1,0 +1,17 @@
+import java.util.*;
+import java.io.*;
+
+class FirstProject extends Thread {
+	public void run() {
+
+	}
+}
+
+public class threat {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

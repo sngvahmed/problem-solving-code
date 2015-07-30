@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../Cut\ Ribbon.cpp 
+
+OBJS += \
+./Cut\ Ribbon.o 
+
+CPP_DEPS += \
+./Cut\ Ribbon.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Cut\ Ribbon.o: ../Cut\ Ribbon.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cut Ribbon.d" -MT"Cut\ Ribbon.d" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

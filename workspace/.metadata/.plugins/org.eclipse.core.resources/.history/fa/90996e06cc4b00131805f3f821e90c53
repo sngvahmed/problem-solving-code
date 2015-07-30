@@ -1,0 +1,30 @@
+public static void readfile() {
+		try {
+                        String min=num.get(0);            
+			BufferedReader br = new BufferedReader(new FileReader(
+					"J:\\in.txt"));
+			String sCurrentLine;
+			while ((sCurrentLine = br.readLine()) != null) {
+				String data = sCurrentLine;
+                                num.add(data);
+				System.out.println(" :: " + data);
+                                for (int i = 0; i < num.size(); i++) {
+                                if(i==num.size()-1)
+                                      {
+                                            break;
+                                        }
+                                 if(num.get(i)<min){
+	                           min=num.get(i);
+                                 }
+                                System.out.print("min=");
+                                System.out.println(min);
+           
+            }
+                                
+			}
+			
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+}

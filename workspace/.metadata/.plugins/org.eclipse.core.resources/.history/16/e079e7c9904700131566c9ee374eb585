@@ -1,0 +1,16 @@
+import java.util.*;
+import java.io.*;
+
+class FirstProject extends Thread {
+	public static void run() {
+
+	}
+}
+
+public class thrd {
+
+	public static void main(String[] args) {
+
+	}
+
+}

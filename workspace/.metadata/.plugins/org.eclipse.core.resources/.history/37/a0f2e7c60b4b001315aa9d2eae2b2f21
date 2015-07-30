@@ -1,0 +1,5 @@
+package linear_quantizer;
+
+public class range {
+	int up, down;
+}

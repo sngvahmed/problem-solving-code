@@ -1,0 +1,53 @@
+package linear_quantizer;
+
+import java.util.*;
+import java.io.*;
+
+public class linear_quantizer {
+	static int n_bits = 0;
+	static ArrayList<Integer> num = new ArrayList<Integer>();
+	static ArrayList<String> word = new ArrayList<String>();
+
+	public static void BuildString(String nm, int count, int des) {
+		if (word.size() <= des * 2 && nm.length() > 0) {
+			word.add(nm);
+		}
+		if (count >= des)
+			return;
+		BuildString(nm + "1", count = count + 1, des);
+		BuildString(nm + "0", count = count + 1, des);
+	}
+
+	public static void readInput() {
+		Scanner input = null;
+		try {
+			input = new Scanner(new File("q.txt"));
+		} catch (Exception e) {
+			System.out.println("Error Opening the File");
+			return;
+		}
+		n_bits = input.nextInt();
+		while (input.hasNext()) {
+			int x = input.nextInt();
+			System.out.println(x);
+			num.add(x);
+		}
+		return;
+	}
+
+	static void Show(ArrayList<String> num) {
+		for (int i = 0; i < num.size(); i++)
+			System.out.print(num.get(i) + " :: ");
+		System.out.println();
+	}
+
+	static public void main(String[] args) {
+		readInput();
+		int pwr = (int) Math.pow(2, n_bits);
+		Collections.sort(num);
+		int step = num.get(num.size() - 1) - num.get(0);
+		step = step / pwr;
+		BuildString("", 0, n_bits / 2);
+		Show(word);
+	}
+}

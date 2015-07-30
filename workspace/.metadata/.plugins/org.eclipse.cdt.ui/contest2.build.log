@@ -1,0 +1,16 @@
+
+**** Build of configuration Debug for project contest2 ****
+
+make all 
+Building file: ../src/contest2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/contest2.d" -MT"src/contest2.d" -o "src/contest2.o" "../src/contest2.cpp"
+Finished building: ../src/contest2.cpp
+ 
+Building target: contest2
+Invoking: GCC C++ Linker
+g++  -o "contest2"  ./src/contest2.o   
+Finished building target: contest2
+ 
+
+**** Build Finished ****
