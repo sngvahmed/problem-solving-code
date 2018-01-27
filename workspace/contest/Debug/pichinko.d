@@ -1,1 +1,0 @@
-pichinko.d: ../pichinko.cpp

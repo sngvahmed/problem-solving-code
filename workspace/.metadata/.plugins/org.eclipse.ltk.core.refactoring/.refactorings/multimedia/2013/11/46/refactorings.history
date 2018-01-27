@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;multimedia/q.txt&apos; to &apos;qin.txt&apos;" description="Rename resource &apos;q.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="q.txt" name="qin.txt" stamp="1384202822562" updateReferences="true"/>
-</session>
